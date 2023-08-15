@@ -3,15 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Api", "PointOfSale\PointOfSale.Api.csproj", "{25E7E2E5-913D-4BFE-9262-3040A5E50FCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Api", "PointOfSale\PointOfSale.Api.csproj", "{25E7E2E5-913D-4BFE-9262-3040A5E50FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Domain", "PointOfSale.Domain\PointOfSale.Domain.csproj", "{ABA6AE77-C2B9-4147-8C81-F4074AEA6684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Domain", "PointOfSale.Domain\PointOfSale.Domain.csproj", "{ABA6AE77-C2B9-4147-8C81-F4074AEA6684}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Presistance", "PointOfSale.Presistance\PointOfSale.Presistance.csproj", "{1FBEB1EB-C86E-4D3B-9E02-49FD79B9E61A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Presistance", "PointOfSale.Presistance\PointOfSale.Presistance.csproj", "{1FBEB1EB-C86E-4D3B-9E02-49FD79B9E61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Infrastructure", "PointOfSale.Infrastructure\PointOfSale.Infrastructure.csproj", "{706DEA58-A4DF-467D-8CE8-ADF11CD37475}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Infrastructure", "PointOfSale.Infrastructure\PointOfSale.Infrastructure.csproj", "{706DEA58-A4DF-467D-8CE8-ADF11CD37475}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Application", "PointOfSale.Application\PointOfSale.Application.csproj", "{EF68D0A0-FC5E-483F-BAA9-00AB97C049CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Application", "PointOfSale.Application\PointOfSale.Application.csproj", "{EF68D0A0-FC5E-483F-BAA9-00AB97C049CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Common", "PointOfSale.Common\PointOfSale.Common.csproj", "{55E359AC-7E7C-4E55-BF08-F808A86C8643}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E74B606E-A378-41B4-A17B-94B03151DDEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ABD8C2D6-F024-4BB1-B1A7-ECBD5CE0DD3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Application.UnitTests", "PointOfSale.Application.UnitTests\PointOfSale.Application.UnitTests.csproj", "{EDD5E5AE-29A2-43AE-9552-9337C3CEABAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +47,26 @@ Global
 		{EF68D0A0-FC5E-483F-BAA9-00AB97C049CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF68D0A0-FC5E-483F-BAA9-00AB97C049CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF68D0A0-FC5E-483F-BAA9-00AB97C049CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E359AC-7E7C-4E55-BF08-F808A86C8643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E359AC-7E7C-4E55-BF08-F808A86C8643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E359AC-7E7C-4E55-BF08-F808A86C8643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E359AC-7E7C-4E55-BF08-F808A86C8643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD5E5AE-29A2-43AE-9552-9337C3CEABAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD5E5AE-29A2-43AE-9552-9337C3CEABAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD5E5AE-29A2-43AE-9552-9337C3CEABAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD5E5AE-29A2-43AE-9552-9337C3CEABAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25E7E2E5-913D-4BFE-9262-3040A5E50FCC} = {E74B606E-A378-41B4-A17B-94B03151DDEC}
+		{ABA6AE77-C2B9-4147-8C81-F4074AEA6684} = {E74B606E-A378-41B4-A17B-94B03151DDEC}
+		{1FBEB1EB-C86E-4D3B-9E02-49FD79B9E61A} = {E74B606E-A378-41B4-A17B-94B03151DDEC}
+		{706DEA58-A4DF-467D-8CE8-ADF11CD37475} = {E74B606E-A378-41B4-A17B-94B03151DDEC}
+		{EF68D0A0-FC5E-483F-BAA9-00AB97C049CA} = {E74B606E-A378-41B4-A17B-94B03151DDEC}
+		{55E359AC-7E7C-4E55-BF08-F808A86C8643} = {E74B606E-A378-41B4-A17B-94B03151DDEC}
+		{EDD5E5AE-29A2-43AE-9552-9337C3CEABAF} = {ABD8C2D6-F024-4BB1-B1A7-ECBD5CE0DD3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FBAE00F-DC04-4056-8917-A0CB0AB7CDEF}
